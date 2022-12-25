@@ -48,3 +48,12 @@ h4{
     font-size:32px;
     color:#ADEFD1FF;
 }
+.anime{
+    animation-name:animea;
+    animation-duration:2s;
+}
+@keyframes animea{
+    0%{
+        transform:scale(1.5);
+    }
+}
