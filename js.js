@@ -1,3 +1,6 @@
+//alert("VA MAPLA EPPITI IRUKA");
+//prompt("un name enna na maranthuten")
+alert("YOU : X opposite :O")
 const boxs=document.querySelectorAll('.box');
 const gamess=document.querySelector('.game');
 const bnrestart=document.querySelector('#reset');
@@ -60,6 +63,8 @@ function checkwinner(){
     if(isWon){
         gamess.textContent=`${player} Won...`;
         running=false;
+         gamess.classList.add("anime");
+
 
     }
     else if(!option.includes("")){
@@ -82,7 +87,7 @@ function restartGame(){
         box.innerHTML="";
         box.classList.remove('win');
     });
-
+    gamess.classList.remove("anime");
 
 }
 function changeplayer(){
